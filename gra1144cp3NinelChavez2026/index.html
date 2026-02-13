@@ -2,10 +2,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Frankenstein (2025) | Ninel Chavez, 2026</title>
+<title>spirited away | Ninel Chavez, 2026</title>
 <style type="text/css">
 body {
-	margin: 0;
+    margin: 0;
+    background-color: black;
 }
 wrapper {
 	width: 1366px;
@@ -17,17 +18,74 @@ header {
 	background-color: pink;
 }
 footer {
-	height: 100px;
-	background-color: #352012;
+    height: 100px;
+    background-color: black;
+    color: white;
+}
+.banner {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    height: 648px;
+	top: 0;
+}
+.gradient-container {
+    position: absolute;
+    height: 648px;
+	width: 100%;
+	top: 0;
+	background-image:linear-gradient(180deg,black,transparent,black);
+	z-index: 1;
+}
+main {
+    position: relative;
+    height: 700px;
+}
+nav ul li {
+    color: white;
+    padding: 20px;
+    display: inline-block;
+    font-size: 36px;
+}
+nav {
+    text-align: center;
+}
+.title {
+    color: white;
+    position: absolute;
+    z-index: 2;
+    width: 500px;
+    height: auto;
+    left: 50%;
+    margin-left: -250px;
+}
+.trailer {
+    width: 700px;
+    margin: auto;
+    display: block;
 }
 </style>
 </head>
 
 <body>
 <wrapper>
-  <header></header>
-  <main>A</main>
-  <footer></footer>
+<main>
+<img src="spirited-away-font.png" alt="" width="811" height="314" class="title">
+<div class="gradient-container"> </div>
+  <img src="spirited-away.jpg" alt="" width="1200" height="648" class="banner">
+  
+  <p>&nbsp;</p></main>
+  <footer>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>Tickets</li>
+        <li>About Us</li>
+      </ul>
+    </nav>
+    <iframe src="https://www.youtube.com/embed/ByXuk9QqQkk?si=iEOsEb0g0WXHgg3r" width="560" height="315" frameborder="0" class="trailer" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	  <p>© 2026, Ninel Chavez. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+  </footer>
 </wrapper>
 </body>
 </html>
