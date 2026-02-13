@@ -7,6 +7,8 @@
 body {
     margin: 0;
     background-color: black;
+	cursor:url("cursor-image.png"), auto;
+	
 }
 wrapper {
 	width: 1366px;
@@ -22,6 +24,9 @@ footer {
     background-color: black;
     padding: 20px;
     color: white;
+}
+.decorartion {
+    width: 1000px;
 }
 .banner {
     width: 100%;
@@ -63,14 +68,27 @@ nav {
 .trailer {
     width: 700px;
     margin: auto;
-    display: block;
+}
+.no-face {
+    height: 407px;
+    width: auto;
+    margin-left: -135px;
+    margin-bottom: -38px;
+}
+.trailer-and-no-face {
+    text-align: center;
+}
+li:hover {
+    color: #464E19;
+    text-shadow: 0 0 10px white,0 0 10px white;
+	cursor:url("cursor-image.png"), auto;
 }
 </style>
 </head>
 
 <body>
 <wrapper>
-<main>
+<main id="home">
 <img src="spirited-away-font.png" alt="" width="811" height="314" class="title">
 <div class="gradient-container"> </div>
   <img src="spirited-away.jpg" alt="" width="1200" height="648" class="banner">
@@ -79,13 +97,15 @@ nav {
   <footer>
     <nav>
       <ul>
-        <li>Home</li>
+        <a href="#home"><li>Home</li></a>
         <li>Tickets</li>
         <li>About Us</li>
       </ul>
     </nav>
-    <iframe src="https://www.youtube.com/embed/ByXuk9QqQkk?si=iEOsEb0g0WXHgg3r" width="560" height="315" frameborder="0" class="trailer" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-	  <p>© 2026, Ninel Chavez. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+    <div class="trailer-and-no-face">
+      <iframe src="https://www.youtube.com/embed/ByXuk9QqQkk?si=iEOsEb0g0WXHgg3r" width="560" height="315" frameborder="0" class="trailer" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <img src="no-face-decoration.png" alt="" width="471" height="750" class="no-face"></div>
+<p>© 2026, Ninel Chavez. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
   </footer>
 </wrapper>
 </body>
