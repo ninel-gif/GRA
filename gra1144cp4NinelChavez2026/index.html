@@ -2,10 +2,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Broward Center for the Performing Arts | Ninel Chavez, 2026</title>
+<title>Broward Center for the Performing Arts | Ninel Chavez, 2026</title> 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
 <style type="text/css">
 body {
     margin: 0;
+   background: linear-gradient(to bottom, #000000, #502e92);
+	
 }
 wrapper {
     width: 1366px;
@@ -26,50 +31,118 @@ section {
     background-image: url(Broward-Center%20for-the-Proforming-Arts%20image.jpg);
 }
 h2 {
+    margin: 0;
+    padding: 20px;
     color: #EFE7DA;
+    font-size: 40px;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 700;
+    text-align: center;
 }
+
+
 #location h2 {
-    color: #C1B6A4;
+    color: #502E92;
+    text-align: right;
 }
 nav ul {
     padding: 0;
     margin: 0;
 }
 ul a li {
-    margin: 0;
-    padding: 20px 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-top: 55px;
+    padding-right: 120px;
+    padding-left: 120px;
+    padding-bottom: 55px;
     display: inline-block;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 700;
+    font-size: 25px;
 }
 ul a li:hover {
-    background-color: #C1B6A4;
+    background-color: #502E92;
 }
 .calendar {
-    width: 457px;
-    height: 317px;
-    margin-top: -51px;
-    margin-right: 52px;
-    margin-left: 878px;
+    width: 336px;
+    height: 280px;
+    margin-top: 441px;
+    margin-right: 5px;
+    margin-left: 1028px;
 }
 .map {
     margin-right: 44px;
-    margin-left: 956px;
-    margin-top: 584px;
+    margin-left: 968px;
+    margin-top: 493px;
     margin-bottom: 73px;
 }
 .video {
-    margin-top: -46px;
-    margin-right: 55px;
-    margin-left: 866px;
+    margin-top: 264px;
+    margin-right: auto;
+    margin-left: 471px;
     margin-bottom: 55px;
     padding-right: 62px;
     width: 533px;
     height: 316px;
+    display: block;
 }
 nav ul a {
     color: white;
 }
 nav {
-    background-color: black;
+    background-color: #d2cdc9
+	;
+}
+	nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 20px;
+}
+.logo {
+    width: 300px;
+    padding: 20px;
+    height: auto;
+}
+.homebottom {
+    padding: 20px 60px;
+}
+.homebottom:hover {
+    background-color: white;
+}
+.splash {
+    font-size: 80px;
+    font-family: "Cinzel Decorative", serif;
+    padding-top: 35px;
+    padding-right: 35px;
+    padding-left: 490px;
+    margin: 0;
+    font-weight: 700;
+    text-align: left;
+    color: #DA6301;
+}
+	footer{
+    padding: 30px 60px;
+}
+
+footer p{
+    color: white;
+    font-size: 14px;
+    line-height: 1.6;
+	width: 100%;
+	margin: 0 auto;
+	 
+}
+.splash:hover ,.mediaheading:hover,.locationheading:hover{
+    color: white;
+    text-shadow: 0px 0px 20px #DA6301, 0px 0px 20px #DA6301, 0px 0px 20px #DA6301, 0px 0px 20px #DA6301, 0px 0px 20px #DA6301;
+}
+#location h2:hover {
+    color: white;
 }
 </style>
 </head>
@@ -81,38 +154,43 @@ nav {
     <section id="home">
       <nav>
         <ul>
-          <a href="#home"><li>Home</li></a>
-        <a href="#media">  <li>Media</li></a>
-         <a href="#location"> <li>Location</li></a>
+          <a href="#home"><li class="homebottom"><img src="theater-logo.png" alt="Broward Center Logo" class="logo"></li></a>
+        <a href="#media">  <li>MEDIA</li></a>
+         <a href="#location"> <li>LOCATION</li></a>
         </ul>
       </nav>
-      <h2>Home</h2>
+      <h2 class="splash">Hamilton</h2>
 		<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&showCalendars=0&showTz=0&src=ZmJiMGU1NTUzNDc2Nzc4ZTczYThlNjhmY2RmYmU1YmQyMDA5NjA4MGUzNzg2ODdiYjVjZTdiNDIyOWRiNDUwZkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23f4511e" width="800" height="600" scrolling="no" frameborder="0" class="calendar" style="border:solid 1px #777"></iframe>
     </section>
   <section id="media">
       <nav>
         <ul>
-          <a href="#home"><li>Home</li></a>
-        <a href="#media">  <li>Media</li></a>
-         <a href="#location"> <li>Location</li></a>
+
+          <a href="#home"><li class="homebottom"><img src="theater-logo.png" alt="Broward Center Logo" class="logo"></li></a>
+        <a href="#media">  <li>MEDIA</li></a>
+         <a href="#location"> <li>LOCATION</li></a>
         </ul>
       </nav>
-      <h2>Media</h2>
+      <h2 class="mediaheading">Media</h2>
 	  <iframe src="https://www.youtube.com/embed/na3ypzm2PUc?si=FIYzHX5ZtYUWkWyd" width="560" height="315" frameborder="0" class="video" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
   <section id="location">
       <nav>
         <ul>
-          <a href="#home"><li>Home</li></a>
-        <a href="#media">  <li>Media</li></a>
-         <a href="#location"> <li>Location</li></a>
+          <a href="#home"><li class="homebottom"><img src="theater-logo.png" alt="Broward Center Logo" class="logo"></li></a>
+        <a href="#media">  <li>MEDIA</li></a>
+         <a href="#location"> <li>LOCATION</li></a>
         </ul>
       </nav>
-      <h2>Location</h2>
+      <h2 class="locationheading">Location</h2>
 	  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7164.713477565968!2d-80.1519469611087!3d26.11990897722377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d900fa2cbf21d7%3A0x1965fa358bd163cd!2sAu-Rene%20Theater%20at%20Broward%20Center%20For%20The%20Performing%20Arts!5e0!3m2!1ses!2sus!4v1772212199339!5m2!1ses!2sus" width="400" height="300" class="map" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
   </main>
-  <footer></footer>
+  <footer>
+	  
+	  <p>© 2026, Ninel Chavez. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+	
+	</footer>
 </wrapper>
 </body>
 </html>
