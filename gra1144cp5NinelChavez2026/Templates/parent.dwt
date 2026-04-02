@@ -5,6 +5,9 @@
 <!-- TemplateBeginEditable name="doctitle" -->
 <title>Enya | Home | Ninel Chavez, 2026</title>
 <!-- TemplateEndEditable -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
 <link href="../styles.css" rel="stylesheet" type="text/css">
 <!-- TemplateBeginEditable name="head" -->
 <!-- TemplateEndEditable -->
@@ -12,8 +15,8 @@
 
 <body>
 <wrapper>
-  <header><img src="" alt="" width="" height="" class="logo">
-    <h1> Enya </h1>
+  <header><img src="enya-name-logo.png" alt="" width="" height="" class="logo">
+    
   </header>
   <nav>
     <a href="../index.html"><li>HOME</li></a>
