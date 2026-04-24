@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <title>JetBloom | Ninel Chavez, 2026</title>
 	<script src="https://kit.fontawesome.com/de1cb72807.js" crossorigin="anonymous"></script>
+	  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet">
 <style type="text/css">
 body {
     margin: 0;
@@ -29,9 +30,10 @@ header {
     background-color: transparent;
 }
 #Tabs1 {
+    brackground-image: none;
+    background-color: rgba(255,255,255,0.80);
     background-image: none;
-    background-color: rgba(255,255,255,0.50);
-}
+	}
 #Tabs1 ul li {
     text-align: center;
 }
@@ -54,8 +56,247 @@ input, select {
 		gap:10px;
 	}
 .search {
-    background-color: rgba(229,179,208,1.00);
     color: white;
+	 background: linear-gradient(135deg, #e7acd0, #d88abf);
+  font-weight: bold;
+}
+	#tabs-2 div{
+		display:grid; 
+		grid-template-columns: 25% 20% 20% 20% 15%;
+		grid:10px;
+	}
+	#tabs-3 div {
+  display: grid;
+  grid-template-columns: 16% 16% 14% 14% 14% 14% 12%;
+  gap: 10px;
+}
+	#tabs-4 div {
+  display: grid;
+  grid-template-columns: 18% 18% 16% 16% 16% 16%;
+  gap: 10px;
+}
+	#tabs-5 div {
+  display: grid;
+  grid-template-columns: 25% 20% 20% 20% 15%;
+  gap: 12px;
+}
+	.logo {
+  height: 130px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: -20px;
+  z-index: 10;
+}
+	header {
+  display: flex;
+  align-items: center;
+  padding: 15px 40px;
+}
+#tabs ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* more space between buttons */
+  padding-left: 0;
+  margin-top: 10px;
+}
+	#tabs ul li a {
+  background-color: rgba(255,255,255,0.85);
+  border-radius: 12px;
+  padding: 12px 18px;
+  transition: 0.3s;
+}
+	#tabs ul li a:hover {
+  background-color: #e7acd0; 
+  color: white;
+  transform: translateY(-3px);
+}
+	.ui-tabs-active a {
+  background-color: #e7acd0 !important;
+  color: white !important;
+}
+	
+.ui-tabs .ui-tabs-nav {
+  display: flex !important;
+  justify-content: center !important;
+  gap: 15px !important;
+  padding: 0 !important;
+}
+
+.ui-tabs .ui-tabs-nav li {
+  float: none !important;
+  margin: 0 !important;
+}
+	header {
+  padding: 20px 0;
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+	#tabs > div {
+  background: rgba(255,255,255,0.25);
+  backdrop-filter: blur(12px);
+  padding: 25px;
+  border-radius: 16px;
+  width: 85%;
+  margin: 20px auto;
+}
+	#tabs input,
+#tabs select {
+  border: none;
+  outline: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+	#tabs {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+	.destinations {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.destinations h2 {
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(8px);
+  color: white;
+  font-size: 32px;
+  text-align: center;
+}
+	.cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap; 
+}
+	.card {
+  width: 280px;
+  height: 180px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+}
+	.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+	.card span {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 3px 10px rgba(0,0,0,0.7);
+}
+	.cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+	.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+	.search {
+  transition: 0.3s ease;
+}
+
+.search:hover {
+  background-color: #d88abf;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+	
+#Tabs1 ul li a:hover {
+  background: rgba(255, 255, 255, 0.6) !important;
+  color: #333 !important;
+  border: none !important;
+}
+#Tabs1 .ui-tabs-active a {
+  background: #e7acdc !important; 
+  color: white !important;
+}
+.ui-state-active,
+.ui-widget-content .ui-state-active {
+  border: none !important;
+}
+	#Tabs1 ul li a {
+  transition: 0.3s ease;
+  border-radius: 10px;
+}
+
+#Tabs1 ul li a:hover {
+  transform: translateY(-3px);
+  background: #f2d7f0 !important; /* soft pink */
+}
+	
+#Tabs1 ul li {
+  background: transparent !important;
+  border: none !important;
+}
+#Tabs1 ul li a {
+  display: block;
+  border-radius: 12px;
+  overflow: hidden;
+}
+#Tabs1 .ui-tabs-active a {
+  background: #e7acdc !important;
+  color: white !important;
+  border-radius: 12px;
+}
+	#Tabs1 ul li a {
+  padding: 10px;
+  transition: 0.3s;
+}
+
+#Tabs1 ul li a:hover {
+  transform: translateY(-3px);
+}
+	footer {
+  width: 100%;
+  margin-top: 40px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center; /* centers the content block */
+}
+
+footer p {
+  max-width: 900px; /* controls width so it doesn’t stretch too much */
+  text-align: left; /* THIS is what you want */
+  font-size: 13px;
+  line-height: 1.5;
+}
+	#tabs-1 p,
+#tabs-2 > p,
+#tabs-3 > p,
+#tabs-4 > p,
+#tabs-5 > p {
+    padding: 8px 18px;
+    margin: 0 0 15px 0;
+    background: rgba(255, 255, 255, 0.22);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+    font-family: 'Noto Serif JP', serif !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    color: #1e3a5f !important;
 }
 </style>
 <link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
@@ -68,7 +309,7 @@ input, select {
 <body>
 <header>
   <wrapper>
-    <h1>JetBloom</h1>
+    <img src="jetbloom-logo-sakura.png" class="logo">
   </wrapper>
 </header>
 <wrapper>
@@ -97,18 +338,90 @@ input, select {
     </div>
     <div id="tabs-2">
       <p>Find your Hotels</p>
+      <input type="text" placeholder="Destination">
+      <input type="date">
+      <input type="date">
+      <select>
+        <option>Number of guests</option>
+        <option>1 guest</option>
+        <option>2 guests</option>
+        <option>3 guests</option>
+      </select>
+      <input type="submit" class="search" value="Search">
     </div>
     <div id="tabs-3">
       <p>Find your Car Rental</p>
+		 <input type="text" placeholder="Pick-up location">
+    <input type="text" placeholder="Same as pick-up">
+    <input type="date">
+    <input type="date">
+    <input type="time">
+    <input type="time">
+    <input type="submit" class="search" value="Search">
     </div>
     <div id="tabs-4">
       <p>Bundle and Save</p>
+		 <input type="text" placeholder="Leaving From">
+    <input type="text" placeholder="Going to">
+    <input type="date">
+    <input type="date">
+    <select>
+      <option>Travelers</option>
+      <option>1 traveler</option>
+      <option>2 travelers</option>
+      <option>3 travelers</option>
+      <option>4 travelers</option>
+    </select>
+    <input type="submit" class="search" value="Search">
     </div>
     <div id="tabs-5">
       <p>Find things to do</p>
+	 <div class="activities-row">
+    <input type="text" placeholder="Destination">
+    <input type="date">
+    <select>
+      <option>Category</option>
+      <option>Tours</option>
+      <option>Attractions</option>
+      <option>Outdoor</option>
+      <option>Food &amp; Drink</option>
+    </select>
+    <select>
+      <option>Tickets</option>
+      <option>1 ticket</option>
+      <option>2 tickets</option>
+      <option>3 tickets</option>
+      <option>4 tickets</option>
+    </select>
+    <input type="submit" class="search" value="Search">
     </div>
-  </div>
+	  </div>
+</div>
 </wrapper>
+	<section class="destinations">
+  <h2>Popular Destinations</h2>
+ <div class="cards">
+
+  <a href="https://www.gotokyo.org/en/" target="_blank" class="card">
+    <img src="tokyo.jpg" alt="Tokyo">
+    <span>Tokyo</span>
+  </a>
+
+  <a href="https://parisjetaime.com/eng/" target="_blank" class="card">
+    <img src="paris.webp" alt="Paris">
+    <span>Paris</span>
+  </a>
+
+  <a href="https://www.nyctourism.com/" target="_blank" class="card">
+    <img src="new-york.jpg" alt="New York">
+    <span>New York</span>
+  </a>
+
+</div>
+</section>
+	<footer>
+	<p>© 2026, Ninel Chavez. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+	</footer>
 <script type="text/javascript">
 $(function() {
 	$( "#Tabs1" ).tabs(); 
