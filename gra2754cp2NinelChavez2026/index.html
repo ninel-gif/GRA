@@ -30,6 +30,7 @@ main {
     margin: 0;
     background: none;
     overflow: hidden;
+	position: relative;
 }
 	main svg {
     display: block;
@@ -37,9 +38,62 @@ main {
     height: auto;
     margin: 0;
 }
-
 footer {
-    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+
+    margin: 0;
+    padding: 15px 40px 18px;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    background-color: #8fb64f;
+    color: #1f2a18;
+}
+
+footer p {
+    margin: 6px 0;
+}
+
+	#biely-title {
+    position: absolute;
+
+    width: 430px;
+    max-width: 38%;
+
+    top: 50px;
+    left: 50%;
+
+    transform: translateX(-50%);
+    transform-origin: center;
+
+    z-index: 20;
+
+    transition:
+        transform 0.35s ease,
+        filter 0.35s ease;
+
+    cursor: pointer;
+}
+	#biely-title:hover {
+    transform: translateX(-50%) translateY(-8px) scale(1.06);
+    filter: drop-shadow(0 12px 14px rgba(0, 0, 0, 0.18));
+}
+	#biely-title {
+    animation: titleFadeIn 1.5s ease-out;
+}
+
+@keyframes titleFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 	
 
@@ -58,7 +112,7 @@ footer {
 
 @keyframes bielySit {
 
-    0%, 19.9% {
+    0%, 18% {
         opacity: 1;
     }
 
@@ -74,11 +128,11 @@ footer {
 
 @keyframes bielyAlert {
 
-    0%, 19.9% {
+    0%, 18% {
         opacity: 0;
     }
 
-    20%, 39.9% {
+    20%, 38% {
         opacity: 1;
     }
 
@@ -95,11 +149,11 @@ footer {
 
 @keyframes bielyStand {
 
-    0%, 39.9% {
+    0%, 38% {
         opacity: 0;
     }
 
-    40%, 59.9% {
+    40%, 58% {
         opacity: 1;
     }
 
@@ -115,7 +169,7 @@ footer {
 
 @keyframes bielyRun {
 
-    0%, 59.9% {
+    0%, 58% {
         opacity: 0;
         transform: translateX(0px);
     }
@@ -125,7 +179,7 @@ footer {
         transform: translateX(0px);
     }
 
-    79.9% {
+    78% {
         opacity: 1;
         transform: translateX(430px);
     }
@@ -143,7 +197,7 @@ footer {
 
 @keyframes bielyJump {
 
-    0%, 79.9% {
+    0%, 78% {
         opacity: 0;
         transform: translateX(430px);
     }
@@ -168,22 +222,22 @@ footer {
 
 @keyframes ballBounce {
 
-    /* Ball starts on the LEFT side of Biely */
+   
     0% {
         transform: translate(-650px, 0px) rotate(0deg);
     }
 
-    /* First bounce */
+    
     12% {
         transform: translate(-520px, -90px) rotate(90deg);
     }
 
-    /* Comes back down */
+   
     22% {
         transform: translate(-400px, 0px) rotate(180deg);
     }
 
-    /* Passes near / in front of Biely */
+   
     32% {
         transform: translate(-280px, -80px) rotate(270deg);
     }
@@ -192,12 +246,12 @@ footer {
         transform: translate(-150px, 0px) rotate(360deg);
     }
 
-    /* Now it reaches its original Illustrator position */
+  
     52% {
         transform: translate(0px, -90px) rotate(450deg);
     }
 
-    /* Continues escaping to the right */
+    
     65% {
         transform: translate(180px, 0px) rotate(540deg);
     }
@@ -227,6 +281,7 @@ footer {
 </header>
 
 <main>
+	<img id="biely-title" src="./biely-title.png" alt="Biely - small dog, big adventures">
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1377.27 916.69">
   <g id="background">
@@ -269,6 +324,15 @@ footer {
 </main>
 
 <footer>
+    <p>© 2026, Ninel Chavez</p>
+
+    <p>
+        This is a fictitious web page created solely for the purpose of education and training.
+        All products and people associated with this web page are also fictitious.
+        Any resemblance to real brands, products, or people is purely coincidental.
+        Information provided about the product is also fictitious and should not be construed
+        to be representative of actual products on the market in a similar product category.
+    </p>
 </footer>
 
 </wrapper>
